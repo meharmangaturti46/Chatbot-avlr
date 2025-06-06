@@ -1,0 +1,120 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - good morning
+    - hey there
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+
+- intent: leave_apply
+  examples: |
+    - I want to apply for leave
+    - apply leave from [2025-06-10](start_date) to [2025-06-12](end_date)
+    - I need to take [sick leave](leave_type) tomorrow
+    - Requesting [casual leave](leave_type) on [2025-06-15](start_date)
+    - can I have [earned leave](leave_type) next week
+
+- intent: leave_status
+  examples: |
+    - what is my leave status
+    - did my last leave get approved
+    - status of my leave request
+    - show my leave requests
+
+- intent: leave_balance
+  examples: |
+    - how many leaves do I have left
+    - leave balance
+    - remaining sick leaves
+    - what is my annual leave balance
+
+- intent: attendance_today
+  examples: |
+    - what is my attendance today
+    - did I punch in
+    - today's punch in status
+    - was I present today
+
+- intent: attendance_history
+  examples: |
+    - show me my attendance last week
+    - attendance history for last 5 days
+    - my attendance record
+
+- intent: payslip_latest
+  examples: |
+    - show my latest payslip
+    - download latest payslip
+    - payslip for this month
+
+- intent: payslip_history
+  examples: |
+    - show payslips for last 3 months
+    - payslip history
+    - my old payslips
+
+- intent: tax_summary
+  examples: |
+    - tax summary for this year
+    - how much tax did I pay last year
+    - tax details
+
+- intent: onboarding_status
+  examples: |
+    - onboarding status
+    - what documents are pending for my onboarding
+    - onboarding steps
+
+- intent: onboarding_documents
+  examples: |
+    - which documents do I need to submit
+    - onboarding documents
+    - pending onboarding paperwork
+
+- intent: policy_query
+  examples: |
+    - what is the leave policy
+    - explain reimbursement policy
+    - tell me about holiday policy
+    - show the HR policy for travel
+
+- intent: faq
+  examples: |
+    - how to update my bank details
+    - HR contact information
+    - process for travel reimbursement
+    - what is the dress code
+
+- intent: reimbursement_process
+  examples: |
+    - how does reimbursement work
+    - explain reimbursement steps
+    - tell me about reimbursement process
+
+- intent: holiday_calendar
+  examples: |
+    - holiday calendar for this year
+    - list of holidays
+    - show public holidays
+
+- intent: out_of_scope
+  examples: |
+    - tell me a joke
+    - what's the weather
+    - who won the match
+
+- regex: leave_type
+  examples: |
+    - sick leave
+    - casual leave
+    - earned leave
+    - annual leave
+    - paid leave

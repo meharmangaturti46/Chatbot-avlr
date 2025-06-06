@@ -1,0 +1,18 @@
+version: "3.1"
+stories:
+- story: greeting and leave balance
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: leave_balance
+  - action: action_leave_balance
+
+- story: leave application
+  steps:
+  - intent: leave_apply
+  - action: action_leave_apply
+
+- story: payslip
+  steps:
+  - intent: payslip_latest
+  - action: action_payslip_latest

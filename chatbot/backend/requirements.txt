@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+dialogflow
+python-dotenv
+aiohttp
+botbuilder-core
+requests
+jose

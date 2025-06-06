@@ -1,0 +1,59 @@
+version: "3.1"
+intents:
+  - greet
+  - goodbye
+  - leave_apply
+  - leave_status
+  - leave_balance
+  - attendance_today
+  - attendance_history
+  - payslip_latest
+  - payslip_history
+  - tax_summary
+  - onboarding_status
+  - onboarding_documents
+  - policy_query
+  - faq
+  - reimbursement_process
+  - holiday_calendar
+  - out_of_scope
+
+entities:
+  - leave_type
+  - start_date
+  - end_date
+
+slots:
+  leave_type:
+    type: text
+  start_date:
+    type: text
+  end_date:
+    type: text
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you with HR today?"
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+  utter_out_of_scope:
+    - text: "Sorry, I can't help with that."
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_out_of_scope
+  - action_leave_apply
+  - action_leave_status
+  - action_leave_balance
+  - action_attendance_today
+  - action_attendance_history
+  - action_payslip_latest
+  - action_payslip_history
+  - action_tax_summary
+  - action_onboarding_status
+  - action_onboarding_documents
+  - action_policy_query
+  - action_faq
+  - action_reimbursement_process
+  - action_holiday_calendar
